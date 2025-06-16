@@ -1,0 +1,1 @@
+module tb2();reg clk,rst;wire[3:0]q,qo;asyn_coun_t_ff uut(clk,rst,q,qo);initial begin clk=0;forever #5 clk=~clk;end initial begin rst=1;#5;rst=0;#10;rst=1;#120;$finish;end endmodule

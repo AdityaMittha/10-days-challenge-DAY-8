@@ -1,0 +1,1 @@
+module tb11();reg d,en;wire q;d_latch uut(d,en,q);initial begin d=0;en=0;#5;d=1;en=1;#10;d=0;#5;d=1;#5;en=0;d=0;#5;d=1;#5;en=1;d=0;#5;d=1;#5;$finish;end endmodule
