@@ -1,0 +1,1 @@
+module tb3();reg clk,rst;wire [3:0] q;ring_coun_d_ff uut(clk,rst,q);initial begin clk=0; forever #5 clk=~clk; end initial begin rst=1; #5; rst=0; #10; rst=1; #50; $finish; end endmodule

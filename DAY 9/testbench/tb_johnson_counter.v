@@ -1,0 +1,1 @@
+module tb8();reg clk,rst;wire[3:0] q;johnson_counter uut(clk,rst,q);initial begin clk=0; forever #5 clk=~clk; end initial begin rst=1; #5; rst=0; #5; rst=1; #90; $finish; end endmodule
